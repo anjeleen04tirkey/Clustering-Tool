@@ -37,16 +37,16 @@ cd clustering-tool
 3. Run the application: streamlit run app.py
 
 # How to Use 🧑‍💻
-1. Upload Dataset:
-(i)Prepare a dataset in CSV format containing categorical and/or numerical features.
-(ii)Update the dataset path in the script or modify the app to accept file uploads.
-2. Feature Selection:
-(i)Use the sidebar to select categorical and numerical features for clustering.
-3. Clustering Configuration:
-(i)View the elbow graph and select multiple potential cluster counts (e.g., 3, 4, 5).
-(ii)Analyze the silhouette scores for the selected cluster counts and choose the optimal number of clusters.
-4. Test-Control Store Selection:
-(i)Select test stores and find control stores from the same cluster using Nearest Neighbors.
+1. Upload Dataset
+   - Prepare a dataset in CSV format containing categorical and/or numerical features.
+   - Update the dataset path in the script or modify the app to accept file uploads.
+2. Feature Selection
+   - Use the sidebar to select categorical and numerical features for clustering.
+3. Clustering Configuration
+   - View the elbow graph and select multiple potential cluster counts (e.g., 3, 4, 5).
+   - Analyze the silhouette scores for the selected cluster counts and choose the optimal number of clusters.
+4. Test-Control Store Selection
+   - Select test stores and find control stores from the same cluster using Nearest Neighbors.
 
 # Technologies Used 🛠️
 1. Streamlit: Interactive web app framework.
