@@ -38,25 +38,25 @@ cd clustering-tool
 
 # How to Use 🧑‍💻
 1. Upload Dataset:
-~Prepare a dataset in CSV format containing categorical and/or numerical features.
-~Update the dataset path in the script or modify the app to accept file uploads.
+(i)Prepare a dataset in CSV format containing categorical and/or numerical features.
+(ii)Update the dataset path in the script or modify the app to accept file uploads.
 2. Feature Selection:
-~Use the sidebar to select categorical and numerical features for clustering.
+(i)Use the sidebar to select categorical and numerical features for clustering.
 3. Clustering Configuration:
-~View the elbow graph and select multiple potential cluster counts (e.g., 3, 4, 5).
-~Analyze the silhouette scores for the selected cluster counts and choose the optimal number of clusters.
+(i)View the elbow graph and select multiple potential cluster counts (e.g., 3, 4, 5).
+(ii)Analyze the silhouette scores for the selected cluster counts and choose the optimal number of clusters.
 4. Test-Control Store Selection:
-~Select test stores and find control stores from the same cluster using Nearest Neighbors.
+(i)Select test stores and find control stores from the same cluster using Nearest Neighbors.
 
 # Technologies Used 🛠️
-~Streamlit: Interactive web app framework.
-~Pandas: Data manipulation and analysis.
-~Scikit-learn: Preprocessing, clustering, silhouette score calculation.
-~KModes & KPrototypes: Clustering categorical and mixed datasets.
-~Matplotlib & Plotly: Visualizations.
-~st-aggrid: Interactive tables for cluster analysis.
+1. Streamlit: Interactive web app framework.
+2. Pandas: Data manipulation and analysis.
+3. Scikit-learn: Preprocessing, clustering, silhouette score calculation.
+4. KModes & KPrototypes: Clustering categorical and mixed datasets.
+5. Matplotlib & Plotly: Visualizations.
+6. st-aggrid: Interactive tables for cluster analysis.
 
 # Future Improvements 🌟
-~Add file upload functionality for datasets.
-~Support additional clustering algorithms.
-~Improve visualization for cluster distribution and feature impact.
+1. Add file upload functionality for datasets.
+2. Support additional clustering algorithms.
+3. Improve visualization for cluster distribution and feature impact.
