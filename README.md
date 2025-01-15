@@ -60,6 +60,3 @@ cd clustering-tool
 ~Add file upload functionality for datasets.
 ~Support additional clustering algorithms.
 ~Improve visualization for cluster distribution and feature impact.
-
-# License 📄
-This project is licensed under the MIT License. See the LICENSE file for details.
