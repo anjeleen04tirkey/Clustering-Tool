@@ -3,8 +3,8 @@ An interactive web application built with Streamlit for performing and analyzing
 
 # Features ✨
 ## 🛠️ Preprocessing
-One-Hot Encoding: Encodes categorical features for clustering.
-Scaling: Scales numerical features using MinMaxScaler.
+- One-Hot Encoding: Encodes categorical features for clustering.
+- Scaling: Scales numerical features using MinMaxScaler.
 
 ## 📊 Clustering
 K-Modes: For datasets with categorical features.
