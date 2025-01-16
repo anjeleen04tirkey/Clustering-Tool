@@ -7,28 +7,28 @@ An interactive web application built with Streamlit for performing and analyzing
 - Scaling: Scales numerical features using MinMaxScaler.
 
 ## 📊 Clustering
-K-Modes: For datasets with categorical features.
-K-Means: For datasets with numerical features.
-K-Prototypes: For mixed datasets with both feature types.
-Elbow Method: Helps determine potential cluster numbers.
-Silhouette Scores: Provides clarity on cluster quality for user-selected cluster counts.
+- K-Modes: For datasets with categorical features.
+- K-Means: For datasets with numerical features.
+- K-Prototypes: For mixed datasets with both feature types.
+- Elbow Method: Helps determine potential cluster numbers.
+- Silhouette Scores: Provides clarity on cluster quality for user-selected cluster counts.
 
 ## 🔍 Cluster Analysis
-View preprocessed data (encoded categorical and scaled numerical features).
-Assign clusters to the dataset and display results.
+- View preprocessed data (encoded categorical and scaled numerical features).
+- Assign clusters to the dataset and display results.
 
 ## 🔄 Test-Control Store Matching
-Select test stores and find matching control stores using Nearest Neighbors.
-Analyze clusters and compare stores within the same cluster.
+- Select test stores and find matching control stores using Nearest Neighbors.
+- Analyze clusters and compare stores within the same cluster.
 
 ## 📈 Visualizations
-Elbow graph for cluster evaluation.
-Interactive tables using st-aggrid for exploring cluster assignments.
+- Elbow graph for cluster evaluation.
+- Interactive tables using st-aggrid for exploring cluster assignments.
 
 # Getting Started 🚀
 ## Prerequisites
-Python 3.7 or higher
-Required libraries (see requirements.txt)
+- Python 3.7 or higher
+- Required libraries (see requirements.txt)
 
 ## Installation
 1. Clone the repository: git clone https://github.com/your-repo-name/clustering-tool.git
