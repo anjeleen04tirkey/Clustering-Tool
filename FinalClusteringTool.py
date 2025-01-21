@@ -290,4 +290,8 @@ if st.button("Find Control Stores"):
             st.dataframe(control_store_details)
 
     else:
+<<<<<<< HEAD
         st.info("No stores selected")
+=======
+        st.info("No stores selected")
+>>>>>>> 0b863bf983216b030621a5a81ec9bb9a4fd2cb93

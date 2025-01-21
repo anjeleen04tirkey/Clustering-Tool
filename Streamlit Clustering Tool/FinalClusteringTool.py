@@ -8,8 +8,8 @@ from kmodes.kprototypes import KPrototypes
 from sklearn.decomposition import PCA
 import plotly.express as px
 from sklearn.cluster import KMeans
-from st_aggrid import AgGrid, GridOptionsBuilder, GridUpdateMode
 from sklearn.metrics import silhouette_score
+from st_aggrid import AgGrid, GridOptionsBuilder, GridUpdateMode
 
 st.set_page_config(page_title="Clustering Tool", page_icon="📊", layout="wide")
 
@@ -109,12 +109,6 @@ if clustering_method == "kmodes":
         except ValueError:
             st.warning("Invalid input. Please enter three integers separated by commas.")
 
-
-    # num_clusters = st.slider("Select Number of Clusters", 2, 9, 3)
-    # kmodes = KModes(n_clusters=num_clusters, init='Huang', random_state=42)
-    # clusters = kmodes.fit_predict(encoded_cats)
-    # selected_data["Cluster"] = clusters
-
 elif clustering_method == "kmeans":
     st.subheader("Using K-Means Clustering (All Numerical Features)")
     costs = []
@@ -132,7 +126,7 @@ elif clustering_method == "kmeans":
     ax.grid(True)
     st.pyplot(fig)
 
-    # User Input for Cluster Options
+     # User Input for Cluster Options
     st.write("### Choose three K values to calculate Silhouette Scores:")
     cluster_options = st.text_input("Enter three numbers separated by commas (e.g., 3,4,5):")
     if cluster_options:
@@ -156,12 +150,6 @@ elif clustering_method == "kmeans":
 
         except ValueError:
             st.warning("Invalid input. Please enter three integers separated by commas.")
-
-
-    # num_clusters = st.slider("Select Number of Clusters", 2, 9, 3)
-    # kmeans = KMeans(n_clusters=num_clusters, random_state=42)
-    # clusters = kmeans.fit_predict(scaled_nums)
-    # selected_data["Cluster"] = clusters
 
 else:  # K-Prototypes (Mixed Data)
     st.subheader("Using K-Prototypes Clustering (Mixed Features)")
@@ -211,12 +199,6 @@ else:  # K-Prototypes (Mixed Data)
         except ValueError:
             st.warning("Invalid input. Please enter three integers separated by commas.")
 
-
-    # num_clusters = st.slider("Select Number of Clusters", 2, 9, 3)
-    # kproto = KPrototypes(n_clusters=num_clusters, random_state=42)
-    # clusters = kproto.fit_predict(combined_data, categorical=categorical_indices)
-    # selected_data["Cluster"] = clusters
-
 # Display cluster assignments
 selected_data["STORE"] = df["STORE"]
 selected_data = selected_data[["STORE", "Cluster"] + cat_features + num_features].sort_values(by="Cluster")
@@ -242,7 +224,7 @@ selected_rows = grid_response["selected_rows"]
 
 if st.button("Find Control Stores"):
     if selected_rows is not None and not selected_rows.empty:
-    # if selected_rows and len(selected_rows) > 0:
+    #if selected_rows and len(selected_rows) > 0:
         selected_rows = pd.DataFrame(selected_rows)
         selected_rows = selected_rows.to_dict(orient="records")
 

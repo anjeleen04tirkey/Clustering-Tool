@@ -31,7 +31,7 @@ def get_conn():
     engine = create_engine(URL(
         account='kmartau.ap-southeast-2.privatelink',
         database="KSF_SOPHIA_DATA_INTELLIGENCE_HUB_PROD",
-        warehouse="KSF_DATA_SCIENTIST_WH (X-SMALL)",
+        warehouse="KSF_DATA_SCIENTIST_WH",
         role='KSF_DATAANALYTICS',
         authenticator='externalbrowser',
         user='anjeleen.tirkey@anko.com'
